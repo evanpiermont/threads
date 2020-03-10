@@ -1,0 +1,119 @@
+.thread_row{
+  position: fixed;
+  width: 70%;
+  top: 10%;
+  left: 15%;
+  border-bottom: grey 2px solid;
+  font-size: 35%;
+  height: 5vh;
+  padding-left: 4px;
+}
+
+.thread_row_title{
+  position: absolute;
+  font-size: 140%;
+  line-height: 6vh;
+}
+
+.thread_row_date{
+  position: absolute;
+  font-size: 60%;
+  top: 120%;
+}
+
+.thread_row_owner{
+  position: absolute;
+  font-size: 60%;
+  top: 120%;
+  right: 0;
+}
+
+#para_wrap{
+  position: fixed;
+  top: 25%;
+  width: 100%;
+  left: 0%;
+  height: 70%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+
+.para{
+  margin-top: 20px;
+}
+
+.para_text{
+  border-left: grey 1px solid;
+  font-size: 35%;
+  min-height: 4vh;
+  padding-left: 4px;
+  padding-top: 6px;
+  width: 70%;
+  white-space: pre-wrap;
+  transform: translateX(15vw)
+}
+
+.para_owner{
+  position: relative;
+  font-size: 15%;
+  width: 10%;
+  bottom: 60%;
+  text-align: right;
+  transform: translateX(4.5vw)
+
+}
+
+.para_time{
+  position: relative;
+  font-size: 15%;
+  width: 10%;
+  bottom: 50%;
+  text-align: right;
+  transform: translateX(4.5vw)
+}
+
+.para_input{
+  font-size: 35%;
+  min-height: 15vh;
+  width: 70%;
+  padding-left: 4px;
+  border: none;
+  outline:none;
+  border-bottom: grey 1px solid;
+  resize: none;
+  white-space: pre-wrap;
+  transform: translateX(15vw)
+}
+
+.fake_button{
+  position: relative;
+  left: 75%;
+  width: 10%;
+  height: 5vh;
+  background: white;
+  padding-left: 4px;
+  font-size: 40%;
+  text-align: center;
+  line-height: 5vh;
+  cursor: pointer;
+  transform: translateY(.1vw)
+}
+
+.regex_link{
+  cursor: pointer;
+  color: lightseagreen;
+  text-decoration: underline;
+}
+
+.ttt{
+  background-color: lightgrey;
+  font-family: monospace;
+  color: lightseagreen;
+}
+
+.kw{
+  background-color: lightgrey;
+}

@@ -1,0 +1,64 @@
+@font-face {
+font-family: Inconsolata;
+src: url(/static/fonts/Inc.otf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inconsolata;
+}
+
+input:required {
+    box-shadow:none;
+}
+input:invalid {
+    box-shadow:none;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #ED8689;
+}
+
+
+.hl{
+    color: #dc322f;
+}
+
+
+#subject_id_box{
+    position: fixed;
+    top: 1%;
+    left: 70%;
+    font-size: 25%;
+    text-align: left;
+}
+
+
+#headthread{
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    font-size: 35%;
+}
+
+.bold{
+  font-weight: bolder;
+  color: #006699;
+}
+
+
+
