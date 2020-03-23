@@ -22,7 +22,8 @@ from sqlalchemy import create_engine
 ## long pg uri is heroku hosted, short is local pg
 #app.config['SQLALCHEMY_DATABASE_URI'] = ''
 engine = create_engine('postgresql://', echo=False)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/evan'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/evan'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://rbikygllddwqic:0b0d4ce5f30bfa9a10a28b5f191246fcf58498312094908e7cbfea24a8de2cab@ec2-54-152-175-141.compute-1.amazonaws.com:5432/d7d9gd9q5q2fpj'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config['WHOOSH_BASE'] = 'postgresql://localhost/evan'
 #heroku = Heroku(app)
