@@ -117,3 +117,78 @@
 .kw{
   background-color: lightgrey;
 }
+
+@media only screen and (max-width : 500px) {
+  
+  .para_text{
+  border-bottom: grey 2px solid;
+  border-left: none;
+
+  }
+  
+  .para_owner{
+  position: relative;
+  font-size: 30%;
+  line-height: 3vh;
+  width: 10%;
+  left: 76%;
+  top: 0%;
+  text-align: right;
+  transform: translateY(0vh);
+
+}
+
+.para_time{
+  position: relative;
+  font-size: 20%;
+  left: 15%;
+  width: 30%;
+  top: 2%;
+  text-align: left;
+  transform: translateY(-3vh)
+}
+  
+ #para_wrap{
+  position: fixed;
+  top: 20%;
+  width: 100%;
+  left: 0%;
+  height: 58%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+  
+.fake_button{
+  position: fixed;
+  left: 85%;
+  width: 10%;
+  height: 4%;
+  top: 80%;
+  background: white;
+  font-size: 35%;
+  text-align: center;
+  line-height: 4vh;
+  cursor: pointer;
+}
+
+  
+.para_input{
+  position: fixed;
+  bottom: 0;
+  font-size: 35%;
+  height: 20%;
+  width: 100%;
+  padding: 5%;
+  border: none;
+  outline:none;
+  border-bottom: none;
+  resize: none;
+  white-space: pre-wrap;
+  transform: translateX(0vw);
+  box-sizing: border-box;
+  padding-top: 7%;
+}
+  
+}

@@ -24,7 +24,7 @@ function clickHist() {
           ntt.attr("data-source", source)
           ntt.attr("data-big", 'big')
           ntt.transition()
-          .style("width", '65%')
+          .style("width", '100%')
           .style('padding-left', '40px');
            document.getElementById("new_thread_text").focus();
            document.getElementById("new_thread_text").select();

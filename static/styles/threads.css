@@ -2,7 +2,7 @@ input{
     position: absolute;
     border: none;
     font-size: 50%;
-    background: aquamarine;
+    background: steelblue;
 }
 
 #new_page_wrap{
@@ -17,16 +17,17 @@ input{
 
 #new_thread_text{
   position: absolute;
-  left: 30%;
-  bottom: 0%;
+  left: 0%;
+  top:110%;
   width: 0%;
   height: 100%;
-  background: aquamarine;
+  background: steelblue;
   resize: none;
   border: none;
   padding-left: 0px;
   line-height: 5vh; /* pegged to size above */
   font-size: 40%;
+  box-sizing: border-box;
 }
 
 .fakebutton{
@@ -35,14 +36,13 @@ input{
   left: 0%;
   bottom: 0%;
   height: 100%;
-  width: 15%;
+  width: 50%;
   font-size: 25%;
-  background: aquamarine; 
+  background: steelblue; 
   text-align: center;
   vertical-align: middle;
   line-height: 100%;
   display: flex; 
-  border-right: 2px solid darkcyan;
 }
 
 .clicked{
@@ -52,8 +52,10 @@ input{
 
 
 #search{
-    left: 15%;
-  margin-left: 2px;
+   left: 50%;
+  border-left: 3px solid #e9eeef;
+    box-sizing: border-box;
+
 }
 
 p { 
@@ -107,4 +109,49 @@ p {
 
 .small{
     font-size: 70%;
+}
+
+@media only screen and (max-width : 500px) {
+  
+  .fakebutton{
+  font-size: 40%;
+}
+  
+  
+#threads_wrap{
+  position: fixed;
+  top: 20%;
+  width: 70%;
+  left: 15%;
+  height: 75%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+  
+.thread_row{
+  margin-top: 7vh;
+}
+
+.thread_row_title{
+  position: absolute;
+  font-size: 130%;
+  line-height: 6vh;
+}
+
+.thread_row_date{
+  position: absolute;
+  font-size: 70%;
+  top: 120%;
+}
+
+.thread_row_owner{
+  position: absolute;
+  font-size: 70%;
+  top: 160%;
+  left: 0;
+  padding-left: 4px;
+}
+
 }

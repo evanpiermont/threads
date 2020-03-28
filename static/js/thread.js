@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", clickHist);
 
 $croll = true;
 
+
 textAreaResize = function(){
   $('textarea').each(function () {
   this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
@@ -22,7 +23,12 @@ textAreaResize = function(){
 });
 };
 
-document.addEventListener("DOMContentLoaded", textAreaResize);
+var mq = window.matchMedia( "only screen and (max-width : 500px)" );
+if (!mq.matches) {
+    document.addEventListener("DOMContentLoaded", textAreaResize);
+}
+
+
 
 
 

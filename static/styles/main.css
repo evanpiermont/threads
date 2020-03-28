@@ -60,5 +60,7 @@ input:focus{
   color: #006699;
 }
 
+@media only screen and (max-width : 500px) {
 
+}
 
